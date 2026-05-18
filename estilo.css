@@ -1,0 +1,148 @@
+/* ============================================================
+   ESTILO PRINCIPAL — estilo.css
+   Este arquivo controla toda a aparência do portal.html.
+   Conceitos aplicados: seletores, classes, IDs, Flexbox.
+   ============================================================ */
+
+
+/* --- CORPO DA PÁGINA --- */
+/* Define a cor de fundo escura e a fonte padrão para toda a página */
+body {
+  background-color: #0d0d0d;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+
+/* --- TÍTULO PRINCIPAL --- */
+/* Centraliza e estiliza o cabeçalho do portal */
+#titulo-principal {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 2.5em;
+  color: #e94560;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #e94560;
+  margin-bottom: 20px;
+}
+
+
+/* --- CONTAINER FLEXBOX --- */
+/* Aqui o Flexbox é ativado: as 3 colunas ficam lado a lado */
+.container {
+  display: flex;          /* ativa o flexbox */
+  flex-direction: row;    /* organiza os filhos em linha horizontal */
+  width: 100%;
+  min-height: 90vh;       /* ocupa quase toda a altura da tela */
+}
+
+
+/* --- COLUNAS (propriedades em comum) --- */
+/* Agrupamento de seletores: evita repetir o mesmo código 3 vezes */
+.coluna {
+  flex-grow: 1;           /* cada coluna ocupa espaço igual */
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #333;
+}
+
+
+/* --- TÍTULOS DAS SEÇÕES --- */
+/* Classe usada nos <h2> de cada coluna */
+.titulo-secao {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* --- IMAGENS --- */
+/* Todas as imagens ocupam 100% da coluna e têm espaçamento */
+.coluna img {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+
+/* --- TEXTOS EXPLICATIVOS --- */
+/* Parágrafos dentro das colunas */
+.coluna p {
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #cccccc;
+}
+
+
+/* --- CLASSE LEGENDA --- */
+/* Aplicada nos <p> que ficam abaixo das imagens */
+.legenda {
+  font-size: 0.8em;
+  color: #888888;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+
+/* --- ID: FILMES E SÉRIES --- */
+/* Cor de fundo e destaque exclusivos desta seção */
+#filmes {
+  background-color: #16213e;
+}
+
+#filmes .titulo-secao {
+  background-color: #e94560;
+  color: #ffffff;
+}
+
+
+/* --- ID: MÚSICA E PODCASTS --- */
+#musica {
+  background-color: #0f3460;
+}
+
+#musica .titulo-secao {
+  background-color: #1a8fe3;
+  color: #ffffff;
+}
+
+
+/* --- ID: GAMES E TECNOLOGIA --- */
+#games {
+  background-color: #1b1b2f;
+}
+
+#games .titulo-secao {
+  background-color: #7b2ff7;
+  color: #ffffff;
+}
+
+
+/* --- RODAPÉ --- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #111;
+  color: #555;
+  font-size: 0.85em;
+  border-top: 1px solid #333;
+}
+
+
+/* --- LINKS --- */
+/* Estado normal e visitado com a mesma cor */
+a:link, a:visited {
+  color: #e94560;
+  text-decoration: none;
+}
+
+/* Cor ao passar o mouse */
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portal de Entretenimento Digital</title>
+
+  <!-- 1. Reset CSS: linkado PRIMEIRO para remover estilos padrão do navegador -->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+
+  <!-- 2. CSS Externo: linkado DEPOIS do reset, aplica o estilo principal -->
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+
+  <!-- 3. CSS INTERNO: estilo exclusivo desta página, usado junto com os outros -->
+  <style>
+    /* Estilo interno: barra de navegação simples no topo */
+    nav {
+      background-color: #111111;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #ffffff;
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #e94560;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Barra de navegação (estilizada pelo CSS interno) -->
+  <nav>
+    <a href="#filmes">🎬 Filmes e Séries</a>
+    <a href="#musica">🎵 Música e Podcasts</a>
+    <a href="#games">🎮 Games e Tecnologia</a>
+  </nav>
+
+  <!-- Título principal com CSS INLINE aplicado diretamente aqui -->
+  <h1 id="titulo-principal" style="font-weight: bold; color: #e94560;">
+    🌐 Meu Portal de Entretenimento Digital
+  </h1>
+
+  <!--  agrupa as 3 colunas lado a lado -->
+  <div class="container">
+
+    <!-- 
+         COLUNA 1 — FILMES E SÉRIES
+         ID "filmes" define cor exclusiva
+          -->
+    <div class="coluna" id="filmes">
+
+      <h2 class="titulo-secao">🎬 Filmes e Séries</h2>
+
+      <!-- Imagem 1 -->
+      <img src="img/filme1.jpg"  style="width: 360px ; height: 180px;" >
+      
+
+      <!-- Imagem 2 -->
+      <img src="img/filme2.jpg" style="width: 360px ; height: 180px;" >
+      
+
+      <!-- Texto explicativo da seção -->
+      <p>
+        Fique por dentro dos melhores lançamentos de filmes e séries.
+        De dramas emocionantes a aventuras de ação, aqui você encontra
+        as principais produções do momento para não perder nada!
+      </p>
+
+      <!-- Link para site externo -->
+      <p><a href="https://about.netflix.com/pt_br/new-to-watch" target="_blank">👉 Acessar Netflix Newsroom</a></p>
+
+    </div><!-- fim #filmes -->
+
+
+    <!-- 
+         COLUNA 2 — MÚSICA E PODCASTS
+         ID "musica" define cor exclusiva
+          -->
+    <div class="coluna" id="musica">
+
+      <h2 class="titulo-secao">🎵 Música e Podcasts</h2>
+
+      <!-- Imagem 1 -->
+      <img src="img/musica1.jpg" style="width: 360px ; height: 180px;" >
+      
+      <!-- Imagem 2 -->
+      <img src="img/musica2.png"  style="width: 360px ; height: 180px;" >
+
+      <!-- Texto explicativo -->
+      <p>
+        Descubra playlists, álbuns em destaque e os podcasts mais
+        ouvidos da semana. Conteúdo para todos os gostos, do pop
+        ao rock, do indie ao eletrônico!
+      </p>
+
+      <p><a href="https://newsroom-spotify-com.translate.goog/news" target="_blank">👉 Acessar Spotify Newsroom</a></p>
+
+    </div><!-- fim #musica -->
+
+
+    <!-- 
+         COLUNA 3 — GAMES E TECNOLOGIA
+         ID "games" define cor exclusiva
+          -->
+    <div class="coluna" id="games">
+
+      <h2 class="titulo-secao">🎮 Games e Tecnologia</h2>
+
+      <!-- Imagem 1 -->
+      <img src="img/game1" style="width: 360px ; height: 180px;" >
+      
+
+      <!-- Imagem 2 -->
+      <img src="img/game2" style="width: 360px ; height: 180px;" >
+      
+
+      <!-- Texto explicativo -->
+      <p>
+        As últimas novidades do mundo gamer e tecnológico.
+        Análises de jogos, reviews de hardware, dicas e tudo
+        que um entusiasta de tecnologia precisa saber!
+      </p>
+
+      <p><a href="https://www.adrenaline.com.br/noticias/" target="_blank">👉 Acessar Adrenaline
+    </div><!-- fim #games -->
+
+  </div><!-- fim .container -->
+
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>© 2026 Meu Portal de Entretenimento Digital - Kauã Soares.</p>
+  </footer>
+
+</body>
+</html>
